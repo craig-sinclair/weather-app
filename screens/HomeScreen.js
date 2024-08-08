@@ -11,7 +11,7 @@ const weatherImages = {
     Sunny: require('../assets/images/weather/sunny.png'),
     Cloudy: require('../assets/images/weather/cloudy.png'),
     Overcast: require('../assets/images/weather/overcast.png'),
-    PartiallyCloudy: require('../assets/images/weather/partiallycloudy.png'),
+    PartiallyCloudy: require('../assets/images/weather/cloudy.png'),
     Snow: require('../assets/images/weather/snow.png'),
     ThunderStorm: require('../assets/images/weather/thunderstorm.png'),
     Rainy: require('../assets/images/weather/rainy.png'),
@@ -21,7 +21,7 @@ const getWeatherColourAndIcon = (description) => {
     if (description.includes('rain')){
         return{icon: weatherImages.Rainy, color: "#21618c"};
     }
-    else if(description.includes('partially')){
+    else if(description.includes('partially') || description.includes('partly')){
         return{icon: weatherImages.PartiallyCloudy, color: "#34495e"};
     }
     else if(description.includes('sunny') || description.includes('clear')){
