@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const rapidApiKey = 'f329e8b97fmshe61db34c8730d0cp1bcd2cjsnb3d8d82c328a';
+const rapidApiKey = '';
 
 
 const getWeatherData = async (query) => {
